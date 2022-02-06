@@ -479,7 +479,7 @@ PlaintextCorpusReader
 Which of the following module is used to download text from a HTML file?
 urllib
 Which of the following is not a collocation, associated with text6?
-squeak squeak
+squeak squeak --wrong
 What is the frequency of bigram ('King', 'Arthur') in text collection text6?
 X32
 Which of the following function is used to generate a set of all possible n consecutive words
