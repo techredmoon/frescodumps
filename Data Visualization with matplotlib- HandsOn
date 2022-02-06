@@ -1,0 +1,71 @@
+Create your First Plot
+-----------------------
+def test_my_first_plot():
+    fig = plt.figure(figsize=(8,6))
+    ax = fig.add_subplot(111)
+    t = [5,10,15,20,25]
+    d = [25, 50, 75, 100, 125]
+    plt.plot(t,d,label="d = 5t")
+    ax.set(title="Time vs Distance Covered",xlabel="time (seconds)",ylabel="distance (meters)",
+           xlim=(0,30),ylim=(0,130))
+    ax.legend()
+    plt.savefig('scatter.png')
+test_my_first_plot()
+
+
+Create Line and Scatter Plots ----Matplotlib -2 Scatter Plots
+---------------------------------------------------------------
+
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+import numpy as np
+import matplotlib.gridspec as gridspec
+from matplotlib.testing.decorators import image_comparison
+#Write your code here
+#TASK 1
+def test_sine_wave_plot():
+
+    fig = plt.figure(figsize=(12,3))
+    ax = fig.add_subplot(111)
+    t = np.linspace(.0,2,200)
+    v = np.sin(2.5*np.pi*t)
+    xti = np.arange(0,2.2,0.2)
+    yti = [-1,0,1]
+    plt.plot(t,v,color="red",label="sin(t)")
+    ax.set(title="Sine Wave",xlabel="Time (seconds)",ylabel="Voltage (mV)",
+           xlim=(0,2),ylim=(-1,1),xticks=xti,yticks=yti)
+    ax.grid(True,linestyle="--")
+    ax.legend()
+    
+    plt.savefig('sinewave.png')
+    
+test_sine_wave_plot()
+
+#TASK 2
+def test_multi_curve_plot():
+    fig = plt.figure(figsize=(12,3))
+    ax = fig.add_subplot(111)
+    x = np.linspace(.0,5,20)
+    y1,y2,y3 = x,x**2,x**3
+    plt.plot(x,y1,color="red",marker="o",label="y = x")
+    plt.plot(x,y2,color="green",marker="s",label="y = x**2")
+    plt.plot(x,y3,color="blue",marker="^",label="y = x**3")
+    ax.set(title="Linear, Quadratic, & Cubic Equations",xlabel="X",ylabel="f(X)")
+    ax.legend()
+    plt.savefig('multicurve.png')
+test_multi_curve_plot()
+
+#TASK 3
+def test_scatter_plot():
+    fig = plt.figure(figsize=(12,3))
+    ax = fig.add_subplot(111)
+    s = [50, 60, 55, 50, 70, 65, 75, 65, 80, 90, 93, 95]
+    months = list(range(1,13))
+    plt.scatter(months,s,color="red",edgecolor="black")
+    ax.set(title="Cars Sold by Company 'X' in 2017",xlabel="Months",ylabel="No. of Cars Sold",
+           xlim=(0,13),ylim=(20,100),xticks=list(range(1,13,2)))
+    ax.set_xticklabels(['Jan', 'Mar', 'May', 'Jul', 'Sep', 'Nov'])
+    plt.savefig('scatter.png')
+    
+test_scatter_plot()
