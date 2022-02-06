@@ -3,3 +3,1034 @@ Count the number of words in text collection, text6, which have only digits as c
 How many times each unique word of text6 collection is repeated on an average?6.5 wrong
 Which of the following modules is used for performing Natural language processing in python?nltk
 What is the total number of unique words present in text collection, text6, while Considering characters too as words :2166
+
+Which of the following NLTK corpus represents a collection US presiential inaugural addresses, starting from 1789?inaugural
+Which of the following NLTK corpus represents a collection of around 10000 news articles?reuters
+Which of the following NLTK corpus represents a collection of all lexical entries?:wordnet
+Which of the following is a Text corpus structure?all
+Which of the following class is used to convert your own collections of text into a corpus?PlaintextCorpusReader
+
+Which of the following class is used to determine count of all tokens present in a given text ?FreqDist
+How many times do the word gas occur in text collections, grouped into genre 'gas'?Consider reuters corpus.10
+
+
+/*
+ Which of the following word occurs frequently after the word Holy in text collection
+text6?
+Grail
+ What is the output of the following expression?
+import nltk
+lancaster = nltk.LancasterStemmer()
+print(lancaster.stem('power')
+Pow
+ What is the output of the following expression?
+import nltk
+wnl = nltk.WordNetLemmatizer()
+print(wnl.lemmatize('women'))
+Woman
+ What is the output of the following expression?
+import nltk
+porter = nltk.PorterStemmer()
+print(porter.stem('lying'))
+Lie
+ How many words are ending with 'ing' in text collection text6?
+ What is the output of the following expression?
+import nltk
+porter = nltk.PorterStemmer()
+print(porter.stem('ceremony'))
+Ceremoni
+ Which tag occurs maximum in text collections associated with news genre of brown
+corpus?
+NN
+ Is it possible to combine Taggers. State if it is true or false?
+ True
+ What is the output of the following expression?
+s = 'Python is awesome'
+print(nltk.pos_tag(nltk.word_tokenize(s)))
+[('Python', 'NNP'), ('is', 'VBZ'), ('awesome', 'JJ')]
+ The process of labelling words into parts of speech is known as ____?
+POS Tagging
+ How many times does the tag AT is associated with the word The in brown corpus?
+6725
+ What is the frequency of bigram ('clop', 'clop') in text collection text6?
+ 26
+ What is the frequency of bigram ('King', 'Arthur') in text collection text6?
+16
+ Which of the following function is used to obtain set of all pair of consecutive words
+appearing in a text?
+Bigrams()
+ Which of the following function is used to generate a set of all possible n consecutive words
+appearing in a text?
+Ngrams()
+ What is the frequency of bigram ('BLACK', 'KNIGHT') in text collection text6?
+32
+Pyhton 3 Programming
+Any Python Script can act like a Module. State if the statement is True or False?
+True
+Which of the following variables stores documentation of a function?
+*doc*
+Which of the following keyword is necessary in defining a generator function?
+return
+Generator expressions uses the following brackets?
+()
+What is the output of the following code ?
+two
+0.0
+-0x2a
+(<class '__main__.child'>, <class '__main__.mother'>, <class '__main__.father'>, <class
+'__main__.grandpa'>, <class 'object'>)
+print('2' == 2)
+False
+How are variable length keyword arguments specified in the function heading?
+one underscore followed by a valid identifier
+In which of the following scenarios, finally block is executed?
+Only when there is an exception
+What is the output of the following code?
+class A:
+ def __init__(self, x=5, y=4):
+ self.x = x
+ self.y = y
+ def __str__(self):
+ return 'A(x: {}, y: {})'.format(self.x, self.y)
+
+ def __eq__(self, other):
+ return self.x * self.y == other.x * other.y
+
+def f1():
+ a = A(12, 3)
+ b = A(3, 12)
+ if (a == b):
+ print(b != a)
+ print(a)
+f1()
+False
+A(x: 12, y: 3)
+Which methods are defined in an iterator class?
+iter, next
+Which of the following brackets are used to define a set comprehension?
+{}
+Which of the following module is not used for parsing command line arguments automatically?
+cmdparse
+Which of the following execption occurs, when an undefined object is accessed?
+UndefinedError
+Which of the following keyword is used for creating a method inside a class ?
+def
+Which of the following modules contain functions that create iterators for efficient looping?
+itertools
+Which of the following methods of 'random' module is used to pick a single element, randomly,
+from a given list of elements?
+choice
+The output of expression [x*y for x, y in zip([3,4],[5,6])] is _______.
+[15, 24]
+Which of the following modules are used to deal with Data compression and archiving?
+All of those mentioned
+The output of the expression 'itertools.dropwhile(lambda x: x<5, [1,4,6,4,1])' is _______.
+[6]
+If a list has 5 elements, then which of the following exceptions is raised when 8th element is
+accessed?
+IndexError
+Which methods are defined in an iterator class?
+
+Which of the following function call is correct?
+f(a=1, b=1, c=2)
+Which of the following expression can be used to check if the file 'C:\Sample.txt' exists and is also a
+regular file?
+os.path.isfile(C:\Sample.txt)
+Which of the following exception occurs, when an integer object is added to a string object?
+TypeError
+When will the else part of try-except-else be executed?
+when no exception occurs
+when no exception occursHow are variable length non-keyword arguments specified in the function
+heading?
+one underscore followed by a valid identifier
+Which of the following statement sets the metaclass of class A to B?
+class A:
+ __metaclass__ = B
+Which of the following method is used by a user defined class to support '+' operator?
+__add__
+Which of the following error occurs, if an iterator is accessed, when it has no elements?
+What is the output of the following code ?
+def bind(func):
+ func.data = 9
+ return func
+@bind
+def add(x, y):
+ return x + y
+print(add(3, 10))
+print(add.data)
+13
+9
+***
+Which of the following is true about decorators ?
+Decorators can be chained
+def decorator_func(func):
+ def wrapper(*args, **kwdargs):
+ return func(*args, **kwdargs)
+ wrapper.__name__ = func.__name__
+ return wrapper
+@decorator_func
+def square(x):
+ return x**2
+print(square.__name__)
+square
+------------------------------------------------------------------------------------
+Python Pandas
+Knowing a Series
+describe() or info()
+It is possible to understand a Series better by using describe method.
+The method provides details like mean, std, etc. about a series.
+Two methods majorly info and describe can be used to know about the data, present in a
+data frame.
+describe provides details of only numeric fields.
+to_csv()
+write a data frame data to an output csv file
+read_excel
+used to read data from excel files
+read_csv
+used to read data from csv files
+skiprows
+method to skip first n lines of an input csv files
+parse_dates
+method to treat data of specific columns as dates
+to_datetime
+ convert a list of date like strings into datetime objects
+Indexing
+refers to labeling data elements of a Series, a Data Frame or a Panel
+Data Aggregation
+refers to identifying data satisfying a condition.
+merge
+method to join two data frames.
+################################################################################
+######
+#Reading Data from JSON
+import pandas as pd
+import numpy as np
+import json
+EmployeeRecords = [{'EmployeeID':451621, 'EmployeeName':'Preeti Jain', 'DOJ':'30-Aug-2008'},
+{'EmployeeID':123621, 'EmployeeName':'Ashok Kumar', 'DOJ':'25-Sep-2016'},
+{'EmployeeID':451589, 'EmployeeName':'Johnty Rhodes', 'DOJ':'04-Nov-2016'}]
+emp_records_json_str = json.dumps(EmployeeRecords)
+df = pd.read_json(emp_records_json_str, orient='records', convert_dates=['DOJ'])
+print(df)
+#END
+df = pd.DataFrame(np.random.rand(5,2))
+df.index = [ 'row_' + str(i) for i in range(1, 6) ]
+df
+################################################################################
+####
+Which of the following attributre or argument used to set column names of a data frame?
+index
+Which of the following cannot be used to create a Data frame?
+a dictionary of tuples
+What is the output of the expression 'b' in s, where is s is the series defined as shown below?
+s = pd.Series([89.2, 76.4, 98.2, 75.9], index=list('abcd'))
+True
+Which of the following is not a Data Structure of Pandas?
+Dictionary
+Which of the following expressions are used to check if each element of a series s is present in the
+list of elements [67, 32]. Series s is defined as shown below.
+s = pd.Series([99, 32, 67],list('abc'))
+s.isin([67, 32])
+import pandas as pd
+s = pd.Series([9.2, 'hello', 89])
+X-float
+objetc
+What is the output of the expression 'b' in s, where is s is the series defined as shown below?
+s = pd.Series([89.2, 76.4, 98.2, 75.9], index=list('abcd'))
+print(s[['c', 'a']])
+dtype: float64
+c 98.20
+a 89.72
+dtype: float64
+Which of the following expression returns last two rows of df, defined below.
+df = pd.DataFrame({'A':[34, 78, 54], 'B':[12, 67, 43]}, index=['r1', 'r2', 'r3'])
+df.loc['r2':'r3']
+Which of the following expression is used to delete the column, A from a data frame named df
+del df['A']
+Which of the following expression is used to add a new column 'C' to a data frame df, with 3 rows
+df['C'] = [12, 98, 45]
+What does the expression df.loc['r4'] = [67, 78] do for the data frame df, defined below
+df = pd.DataFrame({'A':[34, 78, 54], 'B':[12, 67, 43]}, index=['r1', 'r2', 'r3'])
+df.loc['r4'] = [67, 78]
+Adds a new row
+Which of the following method is used to write a data frame data to an output csv file?
+to_csv
+Which of the following method is used to read data from excel files ?
+read_excel
+Which of the following is used as argument of read_csv method to treat data of specific columns as
+dates
+parse_dates
+What is the length of PeriodIndex object created from the expression pd.period_range('11-Sep2017', '17-Sep-2017', freq='M')
+1
+What does the expression d + pd.Timedelta('1 days 2 hours') do to DatetimeIndex object d, defined
+below
+d = pd.date_range('11-Sep-2017', '17-Sep-2017', freq='2D')
+d = d + pd.Timedelta('1 days 2 hours')
+X-Results in Error
+Increases each datetime value by 1 day and 2 hours
+What is the length of DatetimeIndex object created with the below expression?
+pd.bdate_range('11-Sep-2017', '17-Sep-2017', freq='2D'
+4
+Which of the following method is used to eliminate rows with null values?
+dropna
+Which of the following argument values are allowed for method argument of fillna?
+All
+By deafault, missing values in any data set are read as ........?
+NaN
+Which of the following method of pandas is used to check if each value is a null or not?
+isnull()
+Consider a data frame df with 10 rows and index [ 'r1', 'r2', 'r3', 'row4', 'row5', 'row6', 'r7', 'r8', 'r9',
+'row10']. What does the expression g = df.groupby(df.index.str.len()) do?
+Groups df based on lebgth of each index value
+Selects Column 'A' and 'D'
+Consider a data frame df with 10 rows and index [ 'r1', 'r2', 'r3', 'row4', 'row5', 'row6', 'r7', 'r8', 'r9',
+'row10']. How many rows are obtained after executing the below expressions
+g = df.groupby(df.index.str.len())
+g.filter(lambda x: len(x) > 1)
+X-5
+9
+Which of the following method can be applied on a groupby object to get the group details
+groups
+Given a data frane df with columns ['A', 'B', 'C', 'D'] and rows ['r1', 'r2', 'r3'], Which of the following
+expression filter those rows whose column B values are greater than 45
+X-df.iloc[df.B > 45]
+df[df.B > 45]
+Which of the following argument is used to set the key to be used for merging two data frames?
+X-key
+k
+Which of the following are allowed values of argument how of merge method?
+All
+What is the shape of d defined in below code?
+s1 = pd.Series([0, 1, 2, 3])
+s2 = pd.Series([0, 1, 2, 3])
+s3 = pd.Series([0, 1, 4, 5])
+d = pd.concat([s1, s2, s3], axis=1)
+(4, 3)
+Which of the following argument is used to ignore the index while concatenating two date frames
+ignore_index
+Given a data frane df with columns ['A', 'B', 'C', 'D'] and rows ['r1', 'r2', 'r3'], Which of the following
+expression is used to extract columns 'C' and 'D'
+df[:, lambda x : x.columns.isin(['C', 'D'])]
+df.loc[:, lambda x : x.columns.isin(['C', 'D'])]
+Which argument is used to override the existing column names, while using concat method
+keys
+Which of the following methods is used to group data of a data frame, based on a specifc columns
+groupby
+Which of the following argument is used to label the elements of a series?
+labels
+What is the data type of series s defined in below code?
+s = pd.Series([9.2, 'hello', 89])
+object
+Given a data frane df with columns ['A', 'B', 'C', 'D'] and rows ['r1', 'r2', 'r3'], Which of the following
+expression filter those rows whose column B values are greater than 45 and column 'C' values are
+less than 30.
+df.loc[(df.B > 45) & (df.C < 30)]
+Which of the following expression returns data of column B of data frame df, defined below.
+None
+What does the expression df.iloc[:, lambda x : [0,3]] do ? Given a data frane df with columns ['A',
+'B', 'C', 'D'] and rows ['r1', 'r2', 'r3'].
+Selects Column 'A' and 'D'
+What does the expression df[lambda x : x.index.str.endswith('3')] do ? Given a data frane df with
+columns ['A', 'B', 'C', 'D'] and rows ['r1', 'r2', 'r3']
+Filters the row labelled r3
+Which of the following is used as argument of read_csv method to make data of specific column as
+index?
+index_col
+Which of the following method is used to concatenate two or more dataframes?
+concat
+State whether the following statement is True or False? read_csv method by default reads all blank
+lines of an input csv file.
+True
+Which of the following expression returns first two rows of df, defined below.
+import pandas as pd
+df = pd.DataFrame({'A':[34, 78, 54], 'B':[12, 67, 43]}, index=['r1', 'r2', 'r3'])
+X-Both df[:2] and df.iloc[:2]
+df[:2]
+What is the shape of data frame df defined in below shown code?
+import pandas as pd
+data = [{'a': 1, 'b': 2}, {'a': 5, 'b': 10, 'c': 20}]
+df = pd.DataFrame(data, columns=['a', 'b'])
+(2, 2)
+###########
+import pandas as pd
+d = pd.date_range('11-Sep-2017', '17-Sep-2017', freq='2D')
+len(d[d.isin(pd.to_datetime(['12-09-2017', '15-09-2017']))])
+1
+State whether the following statement is True or False? read_csv method can read multiple columns
+of an input file as indexes.
+True
+Which of the following expression returns second row of df, defined below.
+import pandas
+df = pd.DataFrame({'A':[34, 78, 54], 'B':[12, 67, 43]}, index=['r1', 'r2', 'r3'])
+df.iloc[1]
+Consider a data frame df with 10 rows and index [ 'r1', 'r2', 'r3', 'row4', 'row5', 'row6', 'r7', 'r8', 'r9',
+'row10']. What does the aggregate method shown in below code do?
+g = df.groupby(df.index.str.len())
+g.aggregate({'A':len, 'B':np.sum})
+x-Computes length of column A and Sum of Column B values of each group
+Computes length of column A and Sum of Column B values
+Given a data frane df with columns ['A', 'B', 'C', 'D'] and rows ['r1', 'r2', 'r3'], Which of the following
+expression filter those rows whose column B values are greater than 45
+df[df.B > 45]
+Which of the following expression returns second row of df, defined below.
+import pandas
+df = pd.DataFrame({'A':[34, 78, 54], 'B':[12, 67, 43]}, index=['r1', 'r2', 'r3'])
+df.iloc[1]
+------------------------------------------------------------------------------------
+NLP Using Python
+sentence = """At eight o'clock on Thursday morning... Arthur didn't feel very good."""
+tokens = nltk.word_tokenize(sentence)
+print(tokens)
+tagged = nltk.pos_tag(tokens)
+print(tagged[0:6])
+entities = nltk.chunk.ne_chunk(tagged)
+print(entities)
+from nltk.corpus import treebank
+t = treebank.parsed_sents('wsj_0001.mrg')[0]
+t.draw()
+wordfreq = nltk.FreqDist(words)
+wordfreq.most_common(2)
+[('programming', 2), ('.', 2)]
+word nltk.import nl
+nltk.download('book')
+from nltk.book import *.
+text1.findall("<tri.*r>")
+type(text1)
+n_unique_words = len(set(text1))
+text1_lcw = [ word.lower() for word in set(text1) ]
+n_unique_words_lc = len(set(text1_lcw))
+word_coverage1 = n_words / n_unique_words
+word_coverage2 = n_words / n_unique_words_lc
+big_words = [word for word in set(text1) if len(word) > 17 ]
+sun_words = [word for word in set(text1) if word.startswith('Sun') ]
+text1_freq = nltk.FreqDist(text1)
+fdist
+top3_text1 = text1_freq.most_common(3)
+####TEXT CORPORA
+Popular Text Corpora
+Genesis: It is a collection of few words across multiple languages.
+Brown: It is the first electronic corpus of one million English words.
+Other Corpus in nltk
+Gutenberg : Collections from Project Gutenberg
+Inaugural : Collection of U.S Presidents inaugural speeches
+stopwords : Collection of stop words.
+reuters : Collection of news articles.
+cmudict : Collection of CMU Dictionary words.
+movie_reviews : Collection of Movie Reviews.
+np_chat : Collection of chat text.
+names : Collection of names associated with males and females.
+state_union : Collection of state union address.
+wordnet : Collection of all lexical entries.
+---------------------------------------------------------------------------------------------------
+2166
+18.55
+['noise','surprise','wise','apologise'] = 4
+How many times each unique word of text6 collection is repeated on an average?
+1.16
+Count the number of words in text collection, text6, ending with ship?
+4
+How many times does the word 'BROTHER' occur in text collection text6?
+What is the frequency of word 'ARTHUR' in text collection text6?
+X-0.0101
+Which of the following modules is used for performing Natural language processing in python?
+nltk
+Which of the following expression is used to download all the required corpus and collections ,
+related to NLTK Book ?
+nltk.download('book')
+What is range of length of words present in text collection text6?
+1 to 12
+In how many number of categories, are all text collections of brown corpus grouped into?
+15
+Which of the following method is used to determine the number of characters present in a corpus?
+char()
+#############
+items = ['apple', 'apple', 'kiwi', 'cabbage', 'cabbage', 'potato']
+nltk.FreqDist(items)
+How many times do the word sugar occur in text collections, grouped into genre 'sugar'? Consider
+reuters corpus.
+521
+How many times do the word zinc occur in text collections, grouped into genre 'zinc'? Consider
+reuters corpus
+70
+Which of the following class is used to determine count of all tokens present in a given text ?
+FreqDist
+What is the number of sentences obtained after breaking 'Python is cool!!!' into sentences using
+sent_tokenize
+4
+Which of the following method is used to tokenize a text based on a regular expression?
+regexp_tokenize()
+Which of the following class is used to convert a list of tokens into NLTK text?
+X-nltk.text
+nltk.text
+Which of the following module can be used to read text data from a pdf document?
+pypdf
+ How many times do the words gasoline and barrels occur in text collections, grouped
+into genre gas? Consider reuters corpus
+ Which of the following method is used to determine the number of characters present in a
+corpus?
+raw()
+ Which of the following method can be used to determine the location of a text collection,
+associated with a corpus?
+Abspath()
+ Which of the following class is used to convert your own collections of text into a corpus?
+PlaintextCorpusReader
+ In how many number of categories, are all text collections of brown corpus grouped into?
+15
+Which of the following module is used to download text from a HTML file?
+urllib
+Which of the following is not a collocation, associated with text6?
+squeak squeak
+What is the frequency of bigram ('King', 'Arthur') in text collection text6?
+X32
+Which of the following function is used to generate a set of all possible n consecutive words
+appearing in a text
+n-grams()
+#########
+Lancaster Stemmer returns build
+Porter Stemmer returns builder.
+################FINAL############################
+What is the output of the following expression?
+import nltk
+lancaster = nltk.LancasterStemmer()
+print(lancaster.stem('power'))
+pow
+What is the total number of unique words present in text collection, text6? Considering characters
+too as words
+2166
+How many words are ending with 'ing' in text collection text6?
+109
+
+Count the number of words in text collection, text6, which have only digits as characters?
+24
+Which of the following NLTK corpus represent a collection US presidential inaugural addresses,
+starting from 1789?
+inaugural
+Which tag occurs maximum in text collections associated with news genre of brown corpus?
+NN
+How many number of words are obtained when the sentence Python is cool!!! is tokenized into
+words, with regular expression r'\w+' ?
+3
+import nltk
+lancaster = nltk.LancasterStemmer()
+print(lancaster.stem('women'))
+wom
+Which of the following is a Text corpus structure?
+All of those mentioned
+Which of the following module is used to download text from a HTML file
+urllib
+How many times does the word sugar occur in text collections, grouped into genre 'sugar'? Consider
+reuters corpus.
+521
+How many times does the words tonnes and year occur in text collections, grouped into genre
+sugar? Consider reuters corpus.
+355, 196
+How many times does the tag AT is associated with the word The in brown corpus?
+7824
+How many times does the words lead and smelter occur in text collections, grouped into genre zinc?
+Consider reuters corpus.
+32, 33
+###################
+import re
+text = 'Python is cool!!!'
+tokens = re.findall(r'\w+', text)
+len(tokens)
+3
+#get tags from brown
+from nltk.corpus import brown
+brown_tagged = brown.tagged_words()
+1161192
+import nltk
+text = 'Python is awesome.'
+words = nltk.word_tokenize(text)
+defined_tags = {'is':'BEZ', 'over':'IN', 'who': 'WPS'}
+-------------------------------------------------------------------------------------------------------
+LIBRARY MANUAL:
+https://www.nltk.org/book/ch02.html
+ONLINE CONSOLE PYTHON3:
+https://www.katacoda.com/courses/python/playground
+pip3 install --user setuptools && pip3 install nltk
+python3 -c "import nltk; nltk.download('book')"
+--------------------------------------------------------------------------------------------------------
+EXAMEN FINAL
+--------------------------------------------------------------------------------------------------------
+Which of the following is not a collocation, associated with text6 ?
+import nltk
+from nltk.book import text6
+gen_text = nltk.Text(text6)
+print(gen_text.collocations())
+Straight Table
+--------------------------------------------------------------------------------------------------------
+How many times does the tag AT is associated with the word The in brown corpus?
+import ntltk
+from nltk.corpus import brown
+brown_text_tagged = nltk.corpus.brown.tagged_words()
+tag_fd = nltk.FreqDist(tag for (word, tag) in brown_text_tagged if tag=='AT' and word =='The')
+print(tag_fd)
+6725
+--------------------------------------------------------------------------------------------------------
+Which of the following function is used to tag parts of speech to words appearing in a text?
+pos_tag()
+--------------------------------------------------------------------------------------------------------
+How many words are ending with 'ly' in text collection text6?c
+import nltk
+from nltk.book import text6
+ly_ending_words = [word for word in text6 if word.endswith('ly') ]
+print(len(ly_ending_words))
+109
+--------------------------------------------------------------------------------------------------------
+Which of the following method can be used to determine the number of text collection files
+associated with a corpus?
+fileids()
+--------------------------------------------------------------------------------------------------------
+Count the number of words in text collection, text6, which have only digits as characters?
+24
+--------------------------------------------------------------------------------------------------------
+Which of the following method is used to view the tagged words of text corpus
+tagged_words()
+--------------------------------------------------------------------------------------------------------
+What is the output of the following expression?
+import nltk
+lancaster = nltk.LancasterStemmer()
+print(lancaster.stem('lying'))
+lying
+--------------------------------------------------------------------------------------------------------
+What is the frequency of bigram ('HEAD', 'KNIGHT') in text collection text6
+import nltk
+from nltk.book import text6
+bigrams = nltk.bigrams(tokens)
+filtered_bigrams = [ (w1, w2) for w1, w2 in bigrams if w1=='HEAD' and w2=='KNIGHT']
+print(filtered_bigrams)
+29
+--------------------------------------------------------------------------------------------------------
+What is the output of the following expression ?
+import nltk
+porter = nltk.PorterStemmer()
+print(porter.stem('ceremony'))
+ceremoni
+--------------------------------------------------------------------------------------------------------
+Which of the following method is used to tokenize a text based on a regular expression
+regexp_tokenize()
+--------------------------------------------------------------------------------------------------------
+What is the frequency of word 'ARTHUR' in text collection text6
+import nltk
+from nltk.book import text6
+fdist = nltk.FreqDist(text6)
+print(fdist.freq('ARTHUR'))
+0.0132
+--------------------------------------------------------------------------------------------------------
+Which of the following function is used to obtain set of all pair of consecutive words appearing in a
+text?
+bigrams()
+--------------------------------------------------------------------------------------------------------
+What is the range of length of words present in text collection text6?
+X-1 to 10
+--------------------------------------------------------------------------------------------------------
+What is the output of the following code?
+import re
+s = 'Python is cool!!!'
+print(re.findall(r'\s\w+\b', s))
+[' is', ' cool']
+--------------------------------------------------------------------------------------------------------
+Which of the following class is used to convert your own collections of text into a corpus?
+PlaintextCorpusReader
+--------------------------------------------------------------------------------------------------------
+What is the output of the following expression?
+import nltk
+wnl = nltk.WordNetLemmatizer()
+print(wnl.lemmatize('women'))
+woman
+--------------------------------------------------------------------------------------------------------
+Which of the following NLTK corpus represent a collection of around 10000 news articles?
+reuters
+--------------------------------------------------------------------------------------------------------
+How many times each unique word of text6 collection is repeated on an average?
+X-6.5 times
+--------------------------------------------------------------------------------------------------------
+What is the frequency of bigram ('BLACK', 'KNIGHT') in text collection text6?
+import nltk
+from nltk.book import text6
+bigrams = nltk.bigrams(text6)
+filtered_bigrams = [ (w1, w2) for w1, w2 in bigrams if w1=='BLACK' and w2=='KNIGHT']
+print(len(filtered_bigrams))
+32
+-------------------------------
+
+
+
+NLP Using Python
+Which of the following is not a collocation, associated with text6?
+Straight table
+BIGRAMS appearing in a text
+What is the frequency of bigram ('clop','clop') in text collection text6?
+26
+How many trigrams are possible from the sentence Python is cool?
+4
+How many trigrams are possible from the sentence Python is cool!!!?
+4
+Which of the following word occurs frequently after the word FRENCH in text
+collection text6?
+GUARD
+What is the frequency of bigram ('HEAD','KNIGHT') in text collection text6?
+29
+What is the frequency of bigram ('BLACK','KNIGHT') in text collection text6?
+32
+What is the frequency of bigram ('King','Arthur') in text collection text6?
+16
+Which of the following word occurs frequently after the word Holy in text
+collection text6?
+Grail
+Which of the following function is used to generate a set of all possible n
+consecutive words appearing in a text?
+ngrams()
+Which of the following class is used to convert a list of tokens into NLTK text?
+nltk.Text correct
+Which of the following function is used to break given text into sentences?
+sent_tokenize
+sentence = """At eight o'clock on Thursday morning... Arthur didn't feel very
+good."""
+tokens = nltk.word_tokenize(sentence)
+print(tokens)
+tagged = nltk.pos_tag(tokens)
+print(tagged[0:6])
+entities = nltk.chunk.ne_chunk(tagged)
+print(entities)
+from nltk.corpus import treebank
+t = treebank.parsed_sents('wsj_0001.mrg')[0]
+t.draw()
+wordfreq = nltk.FreqDist(words)
+wordfreq.most_common(2)
+[('programming', 2), ('.', 2)]
+word nltk.import nl
+nltk.download('book')
+from nltk.book import *.
+text1.findall("<tri.*r>")
+type(text1)
+n_unique_words = len(set(text1))
+text1_lcw = [ word.lower() for word in set(text1) ]
+n_unique_words_lc = len(set(text1_lcw))
+word_coverage1 = n_words / n_unique_words
+word_coverage2 = n_words / n_unique_words_lc
+big_words = [word for word in set(text1) if len(word) > 17 ]
+sun_words = [word for word in set(text1) if word.startswith('Sun') ]
+text1_freq = nltk.FreqDist(text1)
+fdist
+top3_text1 = text1_freq.most_common(3)
+####TEXT CORPORA
+Popular Text Corpora
+Genesis: It is a collection of few words across multiple languages.
+Brown: It is the first electronic corpus of one million English words.
+Other Corpus in nltk
+Gutenberg : Collections from Project Gutenberg
+Inaugural : Collection of U.S Presidents inaugural speeches
+stopwords : Collection of stop words.
+reuters : Collection of news articles.
+cmudict : Collection of CMU Dictionary words.
+movie_reviews : Collection of Movie Reviews.
+np_chat : Collection of chat text.
+names : Collection of names associated with males and females.
+state_union : Collection of state union address.
+wordnet : Collection of all lexical entries.
+-----------------------------------------------------------------------------------
+----------------
+How many times do the word gas occur in text collections, grouped into genre 'gas'?
+Consider reuters corpus.
+10
+How many times do the words gasoline and barrels occur in text collections, grouped
+into genre gas ? Consider reuters corpus.
+77,64
+How many times do the words tonnes and year occur in text collections, grouped into
+genre sugar ? Consider reuters corpus.
+355,196
+Which of the following method is used to view the conditions, which are used while
+computing conditional frequency distributions?
+conditons()
+Which of the following class is used to determine count of all tokens present in a
+given text ?
+FreqDist
+lead and smelter
+40,33
+2166
+18.55
+['noise','surprise','wise','apologise'] = 4
+How many times each unique word of text6 collection is repeated on an average?
+7.8 times
+Count the number of words in text collection, text6, ending with ship?
+1
+How many times does the word 'BROTHER' occur in text collection text6?
+4
+What is the frequency of word 'ARTHUR' in text collection text6?
+0.0132
+Which of the following modules is used for performing Natural language processing
+in python?
+nltk
+Which of the following expression is used to download all the required corpus and
+collections , related to NLTK Book ?
+nltk.download('book')
+What is range of length of words present in text collection text6?
+1 to 13
+What are the categories to which the text collection text/16438, of reuters corpus
+is tagged to ?
+crude, nat-gas
+In how many number of categories, are all text collections of brown corpus grouped
+into?
+15
+Which of the following method is used to determine the number of characters present
+in a corpus?
+char() wrong
+Which of the following expression imports genesis corpus into the working
+environment?
+form ntlk.corpus import genesis
+#############
+items = ['apple', 'apple', 'kiwi', 'cabbage', 'cabbage', 'potato']
+nltk.FreqDist(items)
+How many times do the word sugar occur in text collections, grouped into genre
+'sugar'? Consider reuters corpus.
+521
+How many times do the word zinc occur in text collections, grouped into genre
+'zinc'? Consider reuters corpus
+70
+Which of the following class is used to determine count of all tokens present in a
+given text ?
+FreqDist
+Which of the following class is used to determine count of all tokens present in
+text collections, grouped bya specific condition?
+ConditionalFreqDist
+Which of the following method is used, on a conditional frequency distribution, in
+order to display frequency of few samples derived under few conditions?
+tabulate()
+What is the number of sentences obtained after breaking 'Python is cool!!!' into
+sentences using sent_tokenize
+2
+Which of the following method is used to tokenize a text based on a regular
+expression?
+regexp_tokenize()
+Which of the following class is used to convert a list of tokens into NLTK text?
+nltk.Text correct
+Which of the following module can be used to read text data from a pdf document?
+pypdf
+Which of the following module is used to download text from a HTML file?
+urllib
+Which of the following is not a collocation, associated with text6?
+squeak squeak
+What is the frequency of bigram ('King', 'Arthur') in text collection text6?
+X32 28
+The process of breaking text into words and punctuation marks in known as
+Tokenization
+Which of the following function is used to generate a set of all possible n
+consecutive words appearing in a text
+grams() X
+#########
+Lancaster Stemmer returns build
+Porter Stemmer returns builder.
+################FINAL############################
+What is the output of the following expression?
+import nltk
+lancaster = nltk.LancasterStemmer()
+print(lancaster.stem('power'))
+pow
+What is the total number of unique words present in text collection, text6, while
+Considering characters too as words
+2166
+What is the total number of words present in text collection, text6, while
+Considering characters too as words
+16967
+How many words are ending with 'ing' in text collection text6?
+109
+
+Count the number of words in text collection, text6, which have only digits as
+characters?
+24
+Which of the following NLTK corpus represent a collection US presidential inaugural
+addresses, starting from 1789?
+inaugural
+Which tag occurs maximum in text collections associated with news genre of brown
+corpus?
+NN
+How many number of words are obtained when the sentence Python is cool!!! is
+tokenized into words, with regular expression r'\w+' ?
+3
+How many number of words are obtained when the sentence Python is cool!!! is
+tokenized into words
+6
+import nltk
+lancaster = nltk.LancasterStemmer()
+print(lancaster.stem('women'))
+wom
+Which of the following is a Text corpus structure?
+All of those mentioned
+Which of the following module is used to download text from a HTML file
+urllib
+How many times does the word sugar occur in text collections, grouped into genre
+'sugar'? Consider reuters corpus.
+0
+How many times does the words tonnes and year occur in text collections, grouped
+into genre sugar? Consider reuters corpus.
+355, 196
+How many times does the tag AT is associated with the word The in brown corpus?
+7824
+How many times does the words lead and smelter occur in text collections, grouped
+into genre zinc? Consider reuters corpus.
+40, 33
+###################
+import re
+text = 'Python is cool!!!'
+tokens = re.findall(r'\w+', text)
+len(tokens)
+3
+#get tags from brown
+from nltk.corpus import brown
+brown_tagged = brown.tagged_words()
+1161192
+import nltk
+text = 'Python is awesome.'
+words = nltk.word_tokenize(text)
+defined_tags = {'is':'BEZ', 'over':'IN', 'who': 'WPS'}
+-----------------------------------------------------------------------------------
+--------------------
+LIBRARY MANUAL:
+https://www.nltk.org/book/ch02.html
+ONLINE CONSOLE PYTHON3:
+https://www.katacoda.com/courses/python/playground
+pip3 install --user setuptools && pip3 install nltk
+python3 -c "import nltk; nltk.download('book')"
+-----------------------------------------------------------------------------------
+---------------------
+EXAMEN FINAL
+-----------------------------------------------------------------------------------
+---------------------
+Which of the following is not a collocation, associated with text6 ?
+import nltk
+from nltk.book import text6
+gen_text = nltk.Text(text6)
+print(gen_text.collocations())
+Straight Table
+-----------------------------------------------------------------------------------
+---------------------
+How many times does the tag AT is associated with the word The in brown corpus?
+import ntltk
+from nltk.corpus import brown
+brown_text_tagged = nltk.corpus.brown.tagged_words()
+tag_fd = nltk.FreqDist(tag for (word, tag) in brown_text_tagged if tag=='AT' and
+word =='The')
+print(tag_fd)
+6725
+-----------------------------------------------------------------------------------
+---------------------
+Which of the following function is used to tag parts of speech to words appearing
+in a text?
+pos_tag()
+-----------------------------------------------------------------------------------
+---------------------
+How many words are ending with 'ly' in text collection text6?c
+import nltk
+from nltk.book import text6
+ly_ending_words = [word for word in text6 if word.endswith('ly') ]
+print(len(ly_ending_words))
+109
+-----------------------------------------------------------------------------------
+---------------------
+Which of the following method can be used to determine the number of text
+collection files associated with a corpus?
+fileids()
+Which of the following method can be used to view the conditions, which are used
+while computing conditional frequency distributions?
+conditions()
+Which of the following method can be used to determine the number of text
+collection, associated with a corpus?
+abspath()
+-----------------------------------------------------------------------------------
+---------------------
+Count the number of words in text collection, text6, which have only digits as
+characters?
+24
+-----------------------------------------------------------------------------------
+---------------------
+Which of the following method is used to view the tagged words of text corpus
+tagged_words()
+-----------------------------------------------------------------------------------
+---------------------
+What is the output of the following expression?
+import nltk
+lancaster = nltk.LancasterStemmer()
+print(lancaster.stem('lying'))
+lying
+-----------------------------------------------------------------------------------
+---------------------
+What is the frequency of bigram ('HEAD', 'KNIGHT') in text collection text6
+import nltk
+from nltk.book import text6
+bigrams = nltk.bigrams(tokens)
+filtered_bigrams = [ (w1, w2) for w1, w2 in bigrams if w1=='HEAD' and w2=='KNIGHT']
+print(filtered_bigrams)
+29
+-----------------------------------------------------------------------------------
+---------------------
+What is the output of the following expression ?
+import nltk
+porter = nltk.PorterStemmer()
+print(porter.stem('ceremony'))
+ceremoni
+-----------------------------------------------------------------------------------
+---------------------
+Which of the following method is used to tokenize a text based on a regular
+expression
+regexp_tokenize()
+-----------------------------------------------------------------------------------
+---------------------
+What is the frequency of word 'ARTHUR' in text collection text6 R: 0.0132
+import nltk
+from nltk.book import text6
+fdist = nltk.FreqDist(text6)
+print(fdist.freq('ARTHUR'))
+0.0132
+-----------------------------------------------------------------------------------
+---------------------
+Which of the following function is used to obtain set of all pair of consecutive
+words appearing in a text?
+bigrams()
+-----------------------------------------------------------------------------------
+---------------------
+What is the range of length of words present in text collection text6?
+X-1 to 10
+-----------------------------------------------------------------------------------
+---------------------
+What is the output of the following code?
+import re
+s = 'Python is cool!!!'
+print(re.findall(r'\s\w+\b', s))
+[' is', ' cool']
+[' is', ' cool']
+-----------------------------------------------------------------------------------
+---------------------
+Which of the following class is used to convert your own collections of text into a
+corpus?
+PlaintextCorpusReader
+-----------------------------------------------------------------------------------
+---------------------
+What is the output of the following expression?
+import nltk
+wnl = nltk.WordNetLemmatizer()
+print(wnl.lemmatize('women'))
+woman
+-----------------------------------------------------------------------------------
+---------------------
+Which of the following NLTK corpus represent a collection of around 10000 news
+articles?
+reuters
+-----------------------------------------------------------------------------------
+---------------------
+How many times each unique word of text6 collection is repeated on an average?
+X-6.5 times
+-----------------------------------------------------------------------------------
+---------------------
+What is the frequency of bigram ('BLACK', 'KNIGHT') in text collection text6?
+import nltk
+from nltk.book import text6
+bigrams = nltk.bigrams(text6)
+filtered_bigrams = [ (w1, w2) for w1, w2 in bigrams if w1=='BLACK' and
+w2=='KNIGHT']
+print(len(filtered_bigrams))
+32
+-----------------------------------------------------------------------------------
+---------------------
+-------------------------------------------------
