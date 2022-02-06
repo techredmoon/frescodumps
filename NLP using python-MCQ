@@ -1,1 +1,5 @@
-
+What is the frequency of word 'ARTHUR' in text collection text6?225
+Count the number of words in text collection, text6, which have only digits as characters?24
+How many times each unique word of text6 collection is repeated on an average?6.5 wrong
+Which of the following modules is used for performing Natural language processing in python?nltk
+What is the total number of unique words present in text collection, text6, while Considering characters too as words :2166
