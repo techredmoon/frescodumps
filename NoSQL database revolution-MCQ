@@ -1,0 +1,16 @@
+Which among the following options is a challenge in the Master-Slave Replication model?all
+The Specialized Query Language(s) used in Graph datastore is/are: all
+NoSQL can handle __________.Unstructured and Semi-structured data
+Which of the following has properties attached to it in the Graph datastore?Nodes and Relationships
+Which type of scaling handles voluminous data by adding servers to the clusters?Horizontal
+Relational Database satisfies __________.All the options
+The file format(s) that can be stored and retrieved from the Document Store NoSQL data model is/are __________.ll the options
+Hash Table Design is similar to __________.Key Value datastore
+In Riak Key Value datastore, the variable 'W' indicates __________.Number of Data Copies to be maintained across nodes
+In the Master-Slave Replication model, the slave node services __________Read operations
+Which type of database requires a trained workforce for the management of data?RDBMS
+The core principle of NoSQL is __________.BASE
+The Document base unit of storage resembles __________ in an RDBMS.Rows
+In Riak Key Value datastore, the Replication Factor 'N' indicates __________.Number of Data Copies to be maintained across nodes
+The scalability of the Key-Value database is achieved through Sharding.True
+The key parameter(s) to be taken into consideration while weighing NoSQL databases against each other is/are __________:all
