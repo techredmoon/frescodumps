@@ -867,7 +867,7 @@ How many times does the words tonnes and year occur in text collections, grouped
 into genre sugar? Consider reuters corpus.
 355, 196
 How many times does the tag AT is associated with the word The in brown corpus?
-7824
+7824 wrong
 How many times does the words lead and smelter occur in text collections, grouped
 into genre zinc? Consider reuters corpus.
 40, 33
