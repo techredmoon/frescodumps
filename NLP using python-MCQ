@@ -10,7 +10,7 @@ Which of the following NLTK corpus represents a collection of all lexical entrie
 Which of the following is a Text corpus structure?all
 Which of the following class is used to convert your own collections of text into a corpus?PlaintextCorpusReader
 
-Which of the following class is used to determine count of all tokens present in a given text ?FreqDist
+Which of the following class is used to determine count of all tokens present in a given text ?FreqDist wrong
 How many times do the word gas occur in text collections, grouped into genre 'gas'?Consider reuters corpus.10
 
 
