@@ -1,1 +1,10 @@
 
+def calculateWordCounts(text):
+    # Write your code here
+
+    n = len(text)
+    print(n)
+    u = len(set(text))
+    print(u)
+    wc = n/u
+    print(int(wc))
