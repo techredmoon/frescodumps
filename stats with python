@@ -1,4 +1,4 @@
-#Write your code here
+#Write your code here -Hypothesis testing
 
 from scipy import stats
 s1 = [45,38,52,48,25,39,51,46,55,46]
@@ -8,6 +8,7 @@ t,p = stats.ttest_rel(s1,s2)
 print(t)
 print(p)
 
+# Random distribution
 
 import scipy as sp
 from scipy import stats
