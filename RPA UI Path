@@ -1,0 +1,1545 @@
+1. What is the file that contains the information about the automation project ?
+project.xml
+project.xaml -- not this
+project.config
+project.json -- c
+2. When publishing a project, what is the type of file the entire project is
+archived to ?
+.bat
+.msi
+.nupkg -- c
+.exe
+3. Which among the following has finite states in its execution?
+State Diagram and flow Chart
+State Diagram -- c
+Sequence
+Flowchart
+4. Which will provide quick access to variables,arguments and imports in UIPath
+Studio ?
+Variables Properties
+All
+Designer panel -- c
+Manage Variables
+5. Variables can be created even if the Designer panel does not contain at least
+one activity.
+True
+False -- c
+6. Which exceutes the process built on UiPath studio?
+UiPath Orchestrator
+UiPath State
+UiPath Robot -- c
+UiPath project
+
+7. Which is suitable for linear processes and stand as a single block activity?
+workflow
+All options
+Sequences -- c
+Flowchart
+8. Entry,Exit and ___________ are the three sections of the state activity in a
+state machine.
+Validate
+Transactions
+End
+Transition(s) -- c
+9. Which among the following has multiple branching logical operators?
+None of the above
+Flow chart and Sequence
+Flowchart -- c
+Sequence
+10. Around__________activities are present in UiPath studio.
+300 -- c
+350
+450
+400
+11. Which is suitable for linear processes and stand as a single block activity?
+All options -- not this
+Flowchart
+workflow
+Sequences -- c
+12. ________ Deals with any kind of data.
+Boolean
+Integer
+String -- not this
+
+Generic value -- c
+============================================================
+1. _________ deals with numbers, characters and Boolean.
+All the options
+Scalar -- c
+Collections
+Tables
+2. _________ is not a type of recording.
+Citrix
+Desktop
+Basic
+Application -- c
+3. Variables in UiPath are categorised into ________ types.
+Three -- c
+Four
+Two
+Five
+4. ________ is used to do excel activities.
+Excel app scope
+Excel pro scope
+Excel application scope -- c
+Excel project scope
+5. _________ is used to find UI elements in application.
+Selectors -- c
+Attributes
+Nodes
+6. $ is a wild card selector.
+True
+False -- c
+7. _________ is used to check by name rather than index.
+
+None of the Options
+Dictionary -- c
+Array
+List
+8. Recording captures everything and transforms it into ________.
+Sequences -- c
+Diagrams
+Flow chart
+9. Which activity enables you to step through arrays, lists, data tables or other
+types of collections?
+ForEach Row -- c
+All the options -- not this
+do While
+ForEach -- not this
+10. ________ provides skeleton structure for process.
+Automatic and Manual Recordings
+Automatic Recoring -- c
+Manual Recoring
+11. Multiple Processes can use the same file if visible checkbox is checked.
+False
+True -- c
+============================================================
+1. __________ is used when reliable selectors are not available.
+Append range -- c
+Add Range -- not this
+Range Append
+2. Relative Scrapping helps in extracting data from virtual networks.
+False
+True -- c
+3. ___________ monitors the system based on system-wide key events.
+
+Hot Key trigger -- c
+Triggering
+Key Trigger
+Key hot triggering
+4. Which among the following is used to check whether the image is available ?
+Image appear
+Image available
+Image Present
+Image Exists -- c
+5. By using ______ property you can find the pages as per your wish.
+Range -- c
+With in Range
+Range from
+6. Citrix environment is a virtual environment.
+True -- c
+False
+7. Output methods are also called as __________.
+Screen scrapping -- c
+Output scrapping
+Web scrapping
+App scrapping
+8. Which among the following is used to automate virtual environments.
+Citrix wizard automation
+citrix automatic wizard -- c
+citrix automation -- not this
+citrix wizard
+9. Which among the following helps in monitoring system events?
+system events monitor -- not this
+Monitoring system events
+
+Monitor system events -- c
+10. Which among the following is used to save mails to specified folder?
+Save Mail Message -- c
+Mail save Message
+Save Mail
+Mail Save
+11. __________ is used to secure the text sent to UI elements.
+Secure text
+Type secure text -- c
+security text
+Secure type text
+12. Relative Scrapping helps in extracting data from virtual networks.
+False
+True -- c
+============================================================
+1. Execution status can be tracked by using _______.
+Logs
+Log Message -- c
+Message Log
+2. Data is passed between the workflows using _______.
+Activities -- c
+Flowcharts
+Diagrams
+3. Which among the following is a organised project standard?
+Maintainable
+Reliable
+All the options -- c
+Efficient
+4. ___________ helps to observe the execution of a process.
+Executions
+
+Debugging -- c
+Exceptions
+5. Which among the following is not a debug mode?
+Highlight
+Break
+slowstep
+Enter -- c
+6. __________ is used to break complex workflow into smaller steps.
+Start Workflow
+Begin Workflow
+Invoke Workflow -- c
+============================================================
+1. All logs in UiPath are exported to ___ file.
+.xls
+.ods
+.xlsx
+.csv -- c
+2. Which among the following maintains and develops orchestrator environment?
+Configuration -- c
+Monitoring
+Deployment
+Development
+3. __________ Orchestrates the robots to run repetitive business process.
+UiPath Explorer
+Ui Explorer
+UIPath Orchestrator -- c
+UiPath Robot -- not this
+4. ___________ helps in executing jobs faster.
+Jobs
+
+Process -- c
+Environments
+5. Which among the following are types of assets?
+Text
+All the options -- c
+Integer
+Bool
+6. You can assign robots in UiPath from _______.
+Jobs Page
+None of the options
+Jobs or Schedules Page -- c
+Schedules Page
+============================================================
+============================================================
+============================================================
+1. Which among the following is used to generate multiple actions in same window?
+Partial and Full selectors
+Partial Selector -- c
+Full selector
+2. _________ adds a pause when activty is done.
+After Delay
+Delay time
+Delay after ---- c
+Pause delay
+3. Despite sensitive to graphical variations which property is fast and reliable?
+Click Element
+Click Image ---- c
+All
+Click Text
+4. We can use _____when looking to extract a certain value from a PDF file when
+there are major structural changes in the file.
+
+Anchor Base -- c
+Element Exists
+Text Exists
+Relative
+5. ______helps in validating selectors in real time.
+Ui Explorer ---- c
+Web explorer
+Desktop explorer
+UiPath Explorer
+6. Which activity enables you to step through arrays, lists, data tables or other
+types of collections?
+ForEach Row -- not this
+ForEach
+do While
+All
+7. Which among the following is a web-based management platform?
+UiPath Orchestrator ---- c
+UiPath Robot
+None of the options
+UiPath Studio
+8. Break activity can be used along with switch activity to iterate through cases
+of switch activity.
+False -- c
+True
+9. Generic Value variables can store any kind of data including text,number,dates
+and array data(s).
+False
+True -- c
+10. ___is the best approach to filter data from a data table based on a condition.
+Clone
+Copy
+
+Select
+Sort -- c
+11. Each transition contains three sections namely condition,action,and
+___________.
+Trigger -- c
+end
+Validate
+final state
+12. Can a robot perform clicks alongside key modifiers (shift, ctrl, etc) in citrix
+environment?
+True -- c
+False
+13. Pick Branch activity cannot be used inside the Then/Else section of an If
+activity.
+True -- c
+False
+14. When you publish a project, the entire project folder is archived into
+_________ file ?
+.bat -- not this
+.nupkg
+.exe
+.msi
+15. Left click and Right click on buttons, Mouse hover and other elements can be
+recorded.
+True
+False -- c
+16. To achieve faster automation UI elements are helpful.
+True -- c
+False
+17. _______ direction can be used within given workflow.
+In and In/Out
+Out
+
+In/Out
+In -- not this
+Direction
+18. It is recommended to surround the workflow by a _____ activity in order to
+handle any exceptions.
+Comment
+Annotations
+Try Catch -- c
+19. Which among the following is fast in execution?
+Default
+Simulate Type/Click -- c
+Windows Message
+20. What is the file that contains the information about the automation project ?
+project.json -- c
+project.config
+project.xml
+project.xaml
+
+1. Can a robot perform clicks alongside key modifiers (shift, ctrl, etc) in citrix environment?
+A.True
+
+2. ______helps in validating selectors in real time.
+Ui Explorer
+
+3. Generic Value variables can store any kind of data including text,number,dates and array data(s).
+True
+
+4.___is the best approach to filter data from a data table based on a condition.
+Sort
+
+5.To achieve faster automation UI elements are helpful.
+True
+
+6.Left clicks on buttons,Right clicks, mouse hover and other clickable elements can  be recorded.
+False
+
+7.Break activity can be used along with switch activity to iterate through cases of switch activity.
+False
+
+8.We can use _____when looking to extract a certain value from a PDF file when there are major structural changes in the file.
+Anchor Base
+
+
+9.Which activity enables you to step through arrays, lists, data tables or other types of collections?
+ForEachRow
+
+10.Which input action on screen scraping is best suited for an application that needs higher rate of compatibility and speed?
+Simulate Type/Click
+
+11.What is the file that contains the information about the automation project ?
+Project.json
+
+12. Which field determines the scope of the argument in a project?
+Direction
+
+13.Each transition contains three sections namely condition,action,and ___________.
+Trigger
+
+14.When publishing a project, what is the type of file the entire project is archived to ?
+.bat
+
+15.Which among the following is fast in execution?
+Simulate Type/Click
+
+16.Which among the following is a web-based management platform?
+Uipath Orchestrator
+
+17.The current values of the variables while working in debug mode will be displayed in ____ panel of the UiPath studio.
+Locals
+
+18.It is recommended to surround the workflow by a _____ activity in order to handle any exceptions.
+Try/Catch
+
+19.Despite sensitive to graphical variations which property is fast and reliable?
+Click Image
+
+20. _________ adds a pause when activty is done.
+Delay after
+
+21._______ enable you to pause the execution of an automation so that you can check its state at a given point.
+Breakpoints
+
+22. When creating a new variable from variables panel, default datatype assigned to that variable is _______.
+String
+
+23. Pick Branch activity cannot be used inside the Then/Else section of an If activity.
+True
+
+24.Which among the following is a organised project standard?
+All the options
+
+25.Entry,Exit and ___________ are the three sections of the state activity in a state machine.
+Transitions
+
+Q.1 Which exceutes the process built on UiPath studio?
+
+       A. UiPath project
+
+       B. UiPath Robot
+
+       C. UiPath Orchestrator
+
+       D. UiPath State
+
+Ans : UiPath Robot
+
+Q.2 Entry,Exit and ___________ are the three sections of the state activity in a state machine.
+
+       A. Transactions
+
+       B. End
+
+       C. Validate
+
+       D. Transition(s)
+
+Ans : Transition(s)
+
+Q.3 Which among the following has finite states in its execution?
+
+       A. State Diagram and flow Chart
+
+       B. Flowchart
+
+       C. Sequence
+
+       D. State Diagram
+
+Ans : State Diagram
+
+Q.4 When publishing a project, what is the type of file the entire project is archived to ?
+
+       A. .bat
+
+       B. .msi
+
+       C. .nupkg
+
+       D. .exe
+
+Ans : .nupkg
+
+
+ 
+Q.5 Variables can be created even if the Designer panel does not contain at least one activity.
+
+       A. True
+
+       B. False
+
+Ans : False
+
+Q.6 Multiple Processes can use the same file if visible checkbox is checked.
+
+       A. True
+
+       B. False
+
+Ans : True
+
+Q.7 ________ Deals with any kind of data.
+
+       A. String
+
+       B. Generic value
+
+       C. Integer
+
+       D. Boolean
+
+Ans : Generic value
+
+Q.8 ________ is used to do excel activities.
+
+       A. Excel application scope
+
+       B. Excel project scope
+
+       C. Excel app scope
+
+       D. Excel pro scope
+
+Ans : Excel application scope
+
+Q.9 _________ deals with numbers, characters and Boolean.
+
+       A. Collections
+
+       B. Tables
+
+
+ 
+       C. Scalar
+
+       D. All the options
+
+Ans : Scalar
+
+Q.10 Recording captures everything and transforms it into ________.
+
+       A. Sequences
+
+       B. Diagrams
+
+       C. Flow chart
+
+Ans : Sequences
+
+Q.11 ________ provides skeleton structure for process.
+
+       A. Manual Recoring
+
+       B. Automatic Recoring
+
+       C. Automatic and Manual Recordings
+
+Ans : Automatic Recoring
+
+Q.12 Which among the following is used to check whether the image is available ?
+
+       A. Image available
+
+       B. Image appear
+
+       C. Image Exists
+
+       D. Image Present
+
+Ans : Image Exists
+
+Q.13 Which among the following helps in monitoring system events?
+
+       A. system events monitor
+
+       B. Monitor system events
+
+       C. Monitoring system events
+
+Ans : Monitor system events
+
+Q.14 $ is a wild card selector.
+
+
+ 
+       A. True
+
+       B. False
+
+Ans : False
+
+Q.15 __________ is used to secure the text sent to UI elements.
+
+       A. security text
+
+       B. Secure text
+
+       C. Secure type text
+
+       D. Type secure text
+
+Ans : Type secure text
+
+Q.16 Which among the following is used to automate virtual environments.
+
+       A. Citrix automatic wizard
+
+       B. Citrix wizard
+
+       C. Citrix automation
+
+       D. Citrix wizard automation
+
+Ans : Citrix automatic wizard
+
+Q.17 By using ______ property you can find the pages as per your wish.
+
+       A. Range
+
+       B. Range from
+
+       C. With in Range
+
+Ans : Range
+
+Q.18 Which among the following is used to save mails to specified folder?
+
+
+ 
+       A. Save Mail Message
+
+       B. Mail save Message
+
+       C. Save Mail
+
+       D. Mail Save
+
+Ans : Save Mail Message
+
+Q.19 Data is passed between the workflows using _______.
+
+       A. Flowcharts
+
+       B. Activities
+
+       C. Diagrams
+
+Ans : Activities
+
+Q.20 Execution status can be tracked by using _______.
+
+       A. Message Log
+
+       B. Logs
+
+       C. Log Message
+
+Ans : Log Message
+
+Q.21 Which among the following is not a debug mode?
+
+       A. Highlight
+
+       B. Break
+
+       C. Enter
+
+       D. slowstep
+
+Ans : Enter
+
+Q.22 __________ is used to break complex workflow into smaller steps.
+
+       A. Start Workflow
+
+       B. Begin Workflow
+
+       C. Invoke Workflow
+
+Ans : Invoke Workflow
+
+Q.23 Which among the following is a organised project standard?
+
+       A. Efficient
+
+       B. Maintainable
+
+       C. Reliable
+
+       D. All the option
+
+Ans : All the option
+
+Q.24 ___________ helps to observe the execution of a process.
+
+       A. Exceptions
+
+
+ 
+       B. Executions
+
+       C. Debugging
+
+Ans : Debugging
+
+Q.25 ___________ helps in executing jobs faster.
+
+       A. Environments
+
+       B. Jobs
+
+       C. Process
+
+Ans : Jobs
+
+Q.26 __________ Orchestrates the robots to run repetitive business process.
+
+       A. Ui Explorer
+
+       B. UiPath Robot
+
+       C. UIPath Orchestrator
+
+       D. UiPath Explorer
+
+Ans : UIPath Orchestrator
+
+Q.27 Which among the following maintains and develops orchestrator environment?
+
+       A. Development
+
+       B. Deployment
+
+       C. Monitoring
+
+       D. Configuration
+
+Ans : Configuration
+
+Q.28 All logs in UiPath are exported to ___ file.
+
+       A. .xlsx
+
+       B. .csv
+
+       C. .xls
+
+       D. .ods
+
+Ans : .csv
+
+Q.29 Which among the following are types of assets?
+
+       A. Text
+
+       B. Integer
+
+       C. Bool
+
+       D. All the options
+
+Ans : All the options
+
+Q.30 You can assign robots in UiPath from _______.
+
+       A. Jobs or Schedules Page
+
+       B. Jobs Page
+
+       C. Schedules Page
+
+       D. None of the options
+
+Ans : Jobs or Schedules Page
+
+Q.31 Which among the following is a web-based management platform?
+
+       A. UiPath Studio
+
+       B. UiPath Robot
+
+       C. UiPath Orchestrator
+
+       D. None of the options
+
+Ans : UiPath Orchestrator
+
+Q.32 _________ adds a pause when activty is done.
+
+       A. Delay time
+
+       B. After Delay
+
+       C. Pause delay
+
+       D. Delay after
+
+Ans : Delay after
+
+Q.33 _____ tool is a method of getting blocks of text from a PDF.
+
+       A. Get Text
+
+       B. Screen Scraping
+
+       C. Read PDF Text
+
+       D. All
+
+Ans : All
+
+Q.34 ______helps in validating selectors in real time.
+
+       A. UiPath Explorer
+
+       B. Web explorer
+
+       C. Desktop explorer
+
+       D. Ui Explorer
+
+Ans : Ui Explorer
+
+Q.35 Which activity enables you to step through arrays, lists, data tables or other types of collections?
+
+       A. do While
+
+       B. ForEach
+
+       C. ForEach Row
+
+       D. All
+
+Ans : ForEach
+
+Q.36 Pick Branch activity cannot be used inside the Then/Else section of an If activity.
+
+       A. True
+
+       B. False
+
+Ans : True
+
+Q.37 Each transition contains three sections namely condition,action,and ___________.
+
+       A. end
+
+       B. Validate
+
+       C. final state
+
+       D. Trigger
+
+Ans : Trigger
+
+Q.38 Which among the following is fast in execution?
+
+       A. Windows Message
+
+       B. Simulate Type/Click
+
+       C. Default
+
+Ans : Simulate Type/Click
+
+Q.39 ___is the best approach to filter data from a data table based on a condition.
+
+       A. Clone
+
+       B. Copy
+
+       C. Select
+
+       D. Sort
+
+Ans : Sort
+
+Q.40 Which input action on screen scraping is best suited for an application that needs higher rate of compatibility and speed?
+
+       A. Simulate Type/Click
+
+       B. Click Image
+
+       C. All
+
+       D. Click
+
+Ans : Simulate Type/Click
+
+Q.41 _______ enable you to pause the execution of an automation so that you can check its state at a given point.
+
+       A. Break
+
+       B. Slow step
+
+       C. Breakpoints
+
+       D. Pause
+
+Ans : Breakpoints
+
+Q.42 We can use _____when looking to extract a certain value from a PDF file when there are major structural changes in the file.
+
+       A. Anchor Base
+
+       B. Text Exists
+
+       C. Element Exists
+
+       D. Relative
+
+Ans : Anchor Base
+
+Q.43 Which among the following is a organised project standard?
+
+       A. Maintainable
+
+       B. Efficient
+
+       C. Reliable
+
+       D. All the options
+
+Ans : All the options
+
+Q.44 Can a robot perform clicks alongside key modifiers (shift, ctrl, etc) in citrix environment?
+
+       A. True
+
+       B. False
+
+Ans : True
+
+Q.45 Generic Value variables can store any kind of data including text,number,dates and array data(s).
+
+       A. True
+
+       B. False
+
+Ans : True
+
+Q.46 Break activity can be used along with switch activity to iterate through cases of switch activity.
+
+       A. True
+
+       B. False
+
+Ans : False
+
+Q.47 To achieve faster automation UI elements are helpful.
+
+       A. True
+
+       B. False
+
+Ans : True
+
+Q.48 Left click and Right click on buttons, Mouse hover and other elements can be recorded.
+
+       A. True
+
+       B. False
+
+Ans : False
+
+Q.49 When you publish a project, the entire project folder is archived into _________ file ?
+
+       A. .bat
+
+       B. .exe
+
+       C. .nupkg
+
+       D. .msi
+
+Ans : .nupkg
+
+Q.50 The current values of the variables while working in debug mode will be displayed in ____ panel of the UiPath studio.
+
+       A. Output
+
+       B. Variables
+
+       C. Locals
+
+       D. Debug
+
+Ans : Locals
+
+. What is the file that contains the information about the automation project ?
+project.xml
+
+project.xaml -- not this
+
+project.config
+
+project.json -- c
+
+2. When publishing a project, what is the type of file the entire project is archived to ?
+
+.bat
+
+.msi
+
+.nupkg -- c
+
+.exe
+
+3. Which among the following has finite states in its execution?
+
+State Diagram and flow Chart
+
+State Diagram -- c
+
+Sequence
+
+Flowchart
+
+4. Which will provide quick access to variables,arguments and imports in UIPathStudio ?
+
+Variables Properties
+
+All
+
+Designer panel -- c
+
+Manage Variables
+
+5. Variables can be created even if the Designer panel does not contain at leastone activity.
+
+True
+
+False -- c
+
+6. Which exceutes the process built on UiPath studio?
+
+UiPath Orchestrator
+
+UiPath State
+
+UiPath Robot -- c
+
+UiPath project 7. Which is suitable for linear processes and stand as a single block activity?
+
+workflow
+
+All options
+
+Sequences -- c
+
+Flowchart
+
+8. Entry,Exit and ___________ are the three sections of the state activity in astate machine.
+
+Validate
+
+Transactions
+
+End
+
+Transition(s) -- c
+
+9. Which among the following has multiple branching logical operators?
+
+None of the above
+
+Flow chart and Sequence
+
+Flowchart -- c
+
+Sequence
+
+10. Around__________activities are present in UiPath studio.
+
+300 -- c
+
+350
+
+450
+
+400
+
+11. Which is suitable for linear processes and stand as a single block activity?
+
+All options -- not this
+
+Flowchart
+
+workflow
+
+Sequences -- c
+
+12. ________ Deals with any kind of data.
+
+Boolean
+
+Integer
+
+String -- not this Generic value -- c
+
+============================================================
+
+1. _________ deals with numbers, characters and Boolean.
+
+All the options
+
+Scalar -- c
+
+Collections
+
+Tables
+
+2. _________ is not a type of recording.
+
+Citrix
+
+Desktop
+
+Basic
+
+Application -- c
+
+3. Variables in UiPath are categorised into ________ types.
+
+Three -- c
+
+Four
+
+Two
+
+Five
+
+4. ________ is used to do excel activities.
+
+Excel app scope
+
+Excel pro scope
+
+Excel application scope -- c
+
+Excel project scope
+
+5. _________ is used to find UI elements in application.
+
+Selectors -- c
+
+Attributes
+
+Nodes
+
+6. $ is a wild card selector.
+
+True
+
+False -- c
+
+7. _________ is used to check by name rather than index. None of the Options
+
+Dictionary -- c
+
+Array
+
+List
+
+8. Recording captures everything and transforms it into ________.
+
+Sequences -- c
+
+Diagrams
+
+Flow chart
+
+9. Which activity enables you to step through arrays, lists, data tables or othertypes of collections?
+
+ForEach Row -- c
+
+All the options -- not this
+
+do While
+
+ForEach -- not this
+
+10. ________ provides skeleton structure for process.
+
+Automatic and Manual Recordings
+
+Automatic Recoring -- c
+
+Manual Recoring
+
+11. Multiple Processes can use the same file if visible checkbox is checked.
+
+False
+
+True -- c
+
+============================================================
+
+1. __________ is used when reliable selectors are not available.
+
+Append range -- c
+
+Add Range -- not this
+
+Range Append
+
+2. Relative Scrapping helps in extracting data from virtual networks.
+
+False
+
+True -- c
+
+3. ___________ monitors the system based on system-wide key events. Hot Key trigger -- c
+
+Triggering
+
+Key Trigger
+
+Key hot triggering
+
+4. Which among the following is used to check whether the image is available ?
+
+Image appear
+
+Image available
+
+Image Present
+
+Image Exists -- c
+
+5. By using ______ property you can find the pages as per your wish.
+
+Range -- c
+
+With in Range
+
+Range from
+
+6. Citrix environment is a virtual environment.
+
+True -- c
+
+False
+
+7. Output methods are also called as __________.
+
+Screen scrapping -- c
+
+Output scrapping
+
+Web scrapping
+
+App scrapping
+
+8. Which among the following is used to automate virtual environments.
+
+Citrix wizard automation
+
+citrix automatic wizard -- c
+
+citrix automation -- not this
+
+citrix wizard
+
+9. Which among the following helps in monitoring system events?
+
+system events monitor -- not this
+
+Monitoring system events Monitor system events -- c
+
+10. Which among the following is used to save mails to specified folder?
+
+Save Mail Message -- c
+
+Mail save Message
+
+Save Mail
+
+Mail Save
+
+11. __________ is used to secure the text sent to UI elements.
+
+Secure text
+
+Type secure text -- c
+
+security text
+
+Secure type text
+
+12. Relative Scrapping helps in extracting data from virtual networks.
+
+False
+
+True -- c
+
+============================================================
+
+1. Execution status can be tracked by using _______.
+
+Logs
+
+Log Message -- c
+
+Message Log
+
+2. Data is passed between the workflows using _______.
+
+Activities -- c
+
+Flowcharts
+
+Diagrams
+
+3. Which among the following is a organised project standard?
+
+Maintainable
+
+Reliable
+
+All the options -- c
+
+Efficient
+
+4. ___________ helps to observe the execution of a process.
+
+Executions Debugging -- c
+
+Exceptions
+
+5. Which among the following is not a debug mode?
+
+Highlight
+
+Break
+
+slowstep
+
+Enter -- c
+
+6. __________ is used to break complex workflow into smaller steps.
+
+Start Workflow
+
+Begin Workflow
+
+Invoke Workflow -- c
+
+============================================================
+
+1. All logs in UiPath are exported to ___ file.
+
+.xls
+
+.ods
+
+.xlsx
+
+.csv -- c
+
+2. Which among the following maintains and develops orchestrator environment?
+
+Configuration -- c
+
+Monitoring
+
+Deployment
+
+Development
+
+3. __________ Orchestrates the robots to run repetitive business process.
+
+UiPath Explorer
+
+Ui Explorer
+
+UIPath Orchestrator -- c
+
+UiPath Robot -- not this
+
+4. ___________ helps in executing jobs faster.
+
+Jobs Process -- c
+
+Environments
+
+5. Which among the following are types of assets?
+
+Text
+
+All the options -- c
+
+Integer
+
+Bool
+
+6. You can assign robots in UiPath from _______.
+
+Jobs Page
+
+None of the options
+
+Jobs or Schedules Page -- c
+
+Schedules Page
+
+====================================================================================================================================================================================
+
+1. Which among the following is used to generate multiple actions in same window?
+
+Partial and Full selectors
+
+Partial Selector -- c
+
+Full selector
+
+2. _________ adds a pause when activty is done.
+
+After Delay
+
+Delay time
+
+Delay after ---- c
+
+Pause delay
+
+3. Despite sensitive to graphical variations which property is fast and reliable?
+
+Click Element
+
+Click Image ---- c
+
+All
+
+Click Text
+
+4. We can use _____when looking to extract a certain value from a PDF file whenthere are major structural changes in the file. Anchor Base -- c
+
+Element Exists
+
+Text Exists
+
+Relative
+
+5. ______helps in validating selectors in real time.
+
+Ui Explorer ---- c
+
+Web explorer
+
+Desktop explorer
+
+UiPath Explorer
+
+6. Which activity enables you to step through arrays, lists, data tables or othertypes of collections?
+
+ForEach Row -- not this
+
+ForEach
+
+do While
+
+All
+
+7. Which among the following is a web-based management platform?
+
+UiPath Orchestrator ---- c
+
+UiPath Robot
+
+None of the options
+
+UiPath Studio
+
+8. Break activity can be used along with switch activity to iterate through casesof switch activity.
+
+False -- c
+
+True
+
+9. Generic Value variables can store any kind of data including text,number,datesand array data(s).
+
+False
+
+True -- c
+
+10. ___is the best approach to filter data from a data table based on a condition.
+
+Clone
+
+Copy Select
+
+Sort -- c
+
+11. Each transition contains three sections namely condition,action,and___________.
+
+Trigger -- c
+
+end
+
+Validate
+
+final state
+
+12. Can a robot perform clicks alongside key modifiers (shift, ctrl, etc) in citrixenvironment?
+
+True -- c
+
+False
+
+13. Pick Branch activity cannot be used inside the Then/Else section of an Ifactivity.
+
+True -- c
+
+False
+
+14. When you publish a project, the entire project folder is archived into_________ file ?
+
+.bat -- not this
+
+.nupkg
+
+.exe
+
+.msi
+
+15. Left click and Right click on buttons, Mouse hover and other elements can berecorded.
+
+True
+
+False -- c
+
+16. To achieve faster automation UI elements are helpful.
+
+True -- c
+
+False
+
+17. _______ direction can be used within given workflow.
+
+In and In/Out
+
+Out In/Out
+
+In -- not this
+
+Direction
+
+18. It is recommended to surround the workflow by a _____ activity in order tohandle any exceptions.
+
+Comment
+
+Annotations
+
+Try Catch -- c
+
+19. Which among the following is fast in execution?
+
+Default
+
+Simulate Type/Click -- c
+
+Windows Message
+
+20. What is the file that contains the information about the automation project ?
+
+project.json -- c
+
+project.config
+
+project.xml
+
+project.xaml
