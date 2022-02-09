@@ -1,0 +1,10 @@
+#Write your code here
+
+from scipy import stats
+s1 = [45,38,52,48,25,39,51,46,55,46]
+s2 = [34,22,15,27,37,41,24,19,26,36]
+
+t,p = stats.ttest_rel(s1,s2)
+print(t)
+print(p)
+
