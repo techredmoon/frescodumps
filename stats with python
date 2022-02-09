@@ -26,3 +26,17 @@ y = np.bincount(data_binom)
 head = print(y[0])
 
 
+#Write your code here
+
+import statistics
+import numpy
+
+s=[26,15,8,44,26,13,38,24,17,29]
+print(statistics.mean(s))
+print(statistics.median(s))
+print(statistics.mode(s))
+q3, q1 = numpy.percentile(s, [75 ,25])
+iqr = q3 - q1
+print(q3,q1)
+print(iqr)
+
