@@ -8,3 +8,20 @@ t,p = stats.ttest_rel(s1,s2)
 print(t)
 print(p)
 
+
+import scipy as sp
+from scipy import stats
+import numpy as np
+import random
+
+from scipy.stats import binom
+data_binom = binom.rvs(n=1,p=0.5,size=10000)
+
+np.random.seed(1)
+
+#print(data_binom)
+
+y = np.bincount(data_binom)
+head = print(y[0])
+
+
