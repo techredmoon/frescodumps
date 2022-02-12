@@ -101,3 +101,33 @@ X_train, X_test, Y_train, Y_test = train_test_split(boston.data, boston.target,r
 print(X_train.shape)
 print(X_test.shape)r
 f_reg = RandomForestRegressor()
+
+
+
+
+
+#### Machine Learning Using Scikit-Learn | 6 | Clustering
+#### TASK 1
+import sklearn.datasets as datasets
+from sklearn import metrics
+from sklearn.cluster import KMeans
+from sklearn.model_selection import train_test_split
+import numpy as np
+
+iris = datasets.load_iris()
+X_train, X_test, Y_train, Y_test = train_test_split(iris.data, iris.target,random_state=30)
+km_cls = KMeans(n_clusters=3)
+km_cls = km_cls.fit(X_train)
+print(metrics.homogeneity_score(km_cls.predict(X_test), Y_test))
+
+#### TASK 2
+import sklearn.datasets as datasets
+from sklearn import metrics
+from sklearn.cluster import AgglomerativeClustering
+from sklearn.model_selection import train_test_split
+import numpy as np
+
+np.random.seed(100)
+iris = datasets.load_iris()
+X_train, X_test, Y_train, Y_test = train_test_split(iris.data, 
+
