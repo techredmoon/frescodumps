@@ -1,12 +1,12 @@
 #Write your code here -Hypothesis testing
-
+Hypothesis Testing 1
+#Write your code here
 from scipy import stats
-s1 = [45,38,52,48,25,39,51,46,55,46]
-s2 = [34,22,15,27,37,41,24,19,26,36]
-
-t,p = stats.ttest_rel(s1,s2)
-print(t)
-print(p)
+s1=[45,38,52,48,25,39,51,46,55,46]
+s2=[34,22,15,27,37,41,24,19,26,36]
+x=stats.ttest_ind(s1,s2)
+print(x[0])
+print(x[1])
 
 # Random distribution
 
@@ -26,17 +26,98 @@ y = np.bincount(data_binom)
 head = print(y[0])
 
 
-#Write your code here
+#Write your code here- discriptive
 
-import statistics
-import numpy
+from scipy import mean
+import numpy as np
+from scipy import stats
+s=np.array([26,15,8,44,26,13,38,24,17,29])
+print(np.mean(s))
+print(np.median(s))
+print(stats.mode(s))
+print(np.percentile(s,25), np.percentile(s,75))
+IQR=stats.iqr(s,interpolation='lower')
+print(IQR)
+print(stats.skew(s))
+print(stats.kurtosis(s))
 
-s=[26,15,8,44,26,13,38,24,17,29]
-print(statistics.mean(s))
-print(statistics.median(s))
-print(statistics.mode(s))
-q3, q1 = numpy.percentile(s, [75 ,25])
-iqr = q3 - q1
-print(q3,q1)
-print(iqr)
+
+#Write your code here -linear regression -1
+import statsmodels.api as sm
+import statsmodels.formula.api as smf
+import numpy as np
+import patsy
+
+mtcar_data = sm.datasets.get_rdataset('mtcars')
+df = mtcar_data.data
+wt = np.array(df.wt)
+mpg =  np.array(df.mpg)
+data = {'wt':wt, 'mpg':mpg}
+linear_model1 = smf.ols('wt~ mpg', data)
+linear_result1 = linear_model1.fit()
+print(linear_result1.rsquared)
+
+
+#Write your code here -linear regression -2
+import statsmodels.api as sm
+import statsmodels.formula.api as smf
+import numpy as np
+import patsy
+
+mtcar_data = sm.datasets.get_rdataset('mtcars')
+df = mtcar_data.data
+wt = np.array(df.wt)
+mpg =  np.array(df.mpg)
+data = {'wt':wt, 'mpg':mpg}
+linear_model1 = smf.ols('np.log(wt)~ np.log(mpg)', data)
+linear_result1 = linear_model1.fit()
+print(linear_result1.rsquared)
+
+
+#Write your code here -logistic regression 
+import statsmodels.api as sm
+import statsmodels.formula.api as smf
+import numpy as np
+import pandas as pd
+
+bio_df = sm.datasets.get_rdataset('biopsy', package='MASS',).data 
+bio_df = bio_df.rename(columns={"class": "Class"})
+bio_df.Class = bio_df.Class.map({"malignant": 1, "benign": 0}) 
+data = {'V1':bio_df['V1'],'Class':bio_df['Class']}
+model = smf.logit("Class ~ V1", data=data)
+result = model.fit() 
+print(result.prsquared)
+
+#Write your code here -poisson regression
+
+import statsmodels.api as sm
+import statsmodels.formula.api as smf
+import numpy as np
+import pandas as pd
+
+ins_df = sm.datasets.get_rdataset('Insurance', package='MASS',).data 
+data = {'holders':ins_df['Holders'],'claims':ins_df['Claims']}
+poisson_model = smf.poisson('claims ~ np.log(holders)', data)
+poisson_model_result = poisson_model.fit()
+print(poisson_model_result.resid.sum())
+
+#Write your code here -AOVONA-1
+
+import statsmodels.api as sm
+import statsmodels.formula.api as smf
+import numpy as np
+from statsmodels.stats import anova
+import patsy
+
+mtcar_data = sm.datasets.get_rdataset('mtcars')
+df = mtcar_data.data
+wt = np.array(df.wt)
+mpg =  np.array(df.mpg)
+data = {'wt':wt, 'mpg':mpg}
+linear_model1 = smf.ols('wt~ mpg', data)
+linear_result1 = linear_model1.fit()
+anv = anova.anova_lm(linear_result1)
+print(anv['F'][0])
+
+
 
