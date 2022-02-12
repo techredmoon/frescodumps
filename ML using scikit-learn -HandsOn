@@ -78,80 +78,88 @@ print(maxdepth)
 
 
 ### Machine Learning Using Scikit-Learn | 4 | Ensemble Methods
-#### TASK 1
-import sklearn.datasets as datasets
-from sklearn.model_selection 
-import train_test_split
+
+#Write your code here
+import sklearn.datasets
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestRegressor
 import numpy as np
+
 np.random.seed(100)
-boston = datasets.load_boston()
-X_train, X_test, Y_train, Y_test = train_test_split(boston.data, boston.target,random_state=30)
+boston=sklearn.datasets.load_boston()
+X_train,X_test,Y_train,Y_test=train_test_split(boston.data,boston.target,random_state=30)
 print(X_train.shape)
 print(X_test.shape)
 
-### TASK 2
-import sklearn.datasets as datasets
-from sklearn.model_selection 
-import train_test_split
-from sklearn.ensemble import RandomForestRegressor
-import numpy as np
-np.random.seed(100)
-boston = datasets.load_boston()
-X_train, X_test, Y_train, Y_test = train_test_split(boston.data, boston.target,random_state=30)
-print(X_train.shape)
-print(X_test.shape)r
-f_reg = RandomForestRegressor()
+rf_reg=RandomForestRegressor()
+rf_reg=rf_reg.fit(X_train,Y_train)
+print(rf_reg.score(X_train,Y_train))
+print(rf_reg.score(X_test, Y_test))
+
+pred=rf_reg.predict(X_test[:2])
+print(pred)
+
+md=2
+ms=0
+n=100
+for i in range (3,6):
+    dt=RandomForestRegressor(max_depth=i,n_estimators=n)
+    dt=dt.fit(X_train,Y_train)
+    acc=dt.score(X_test,Y_test)
+    if(acc>ms):
+        ms=acc
+        md=i
+print((md,n))
 
 
 
 #### Machine Learning Using Scikit-Learn | 5 | SVM
-#### TASK 1
-import sklearn.datasets as datasets
-from sklearn.model_selection import train_test_split
-import numpy as np
+#Write your code here
 
-np.random.seed(100)
-digits = datasets.load_digits()
-X_train, X_test, Y_train, Y_test = train_test_split(digits.data, digits.target,random_state=30)
+import sklearn.datasets
+import sklearn.preprocessing as preprocessing
+from sklearn.model_selection import train_test_split
+from sklearn.svm import SVC
+digits=sklearn.datasets.load_digits()
+X_train,X_test,Y_train,Y_test=train_test_split(digits.data,digits.target,stratify=digits.target,random_state=30)
 print(X_train.shape)
 print(X_test.shape)
 
-#### TASK 2
-import sklearn.datasets as datasets
-from sklearn.model_selection import train_test_split
-from sklearn.svm import SVC
-import numpy as np
+svm_clf=SVC()
+svm_clf=svm_clf.fit(X_train,Y_train)
+print(svm_clf.score(X_test,Y_test))
 
-np.random.seed(100)
-digits = datasets.load_digits()
-X_train, X_test, Y_train, Y_test = train_test_split(digits.data, digits.target,random_state=30,stratify=digits.target)
-svm_clf = SVC()
-svm_clf = svm_clf.fit(X_train, Y_train)
-
+digits_standardized=preprocessing.StandardScaler()
+digits_standardized=digits_standardized.fit(digits.data)
+digits_standardized=digits_standardized.transform(digits.data)
+X_train,X_test,Y_train,Y_test=train_test_split(digits_standardized,digits.target, stratify=digits.target,random_state=30)
+svm_clf2=SVC()
+sym_clf2=svm_clf2.fit(X_train,Y_train)
+print(svm_clf2.score(X_test, Y_test))
 
 
 #### Machine Learning Using Scikit-Learn | 6 | Clustering
-#### TASK 1
-import sklearn.datasets as datasets
-from sklearn import metrics
+
+
+#Write your code here
+import sklearn.datasets
+from sklearn.model_selection import train_test_split
 from sklearn.cluster import KMeans
-from sklearn.model_selection import train_test_split
-import numpy as np
-
-iris = datasets.load_iris()
-X_train, X_test, Y_train, Y_test = train_test_split(iris.data, iris.target,random_state=30)
-km_cls = KMeans(n_clusters=3)
-km_cls = km_cls.fit(X_train)
-print(metrics.homogeneity_score(km_cls.predict(X_test), Y_test))
-
-#### TASK 2
-import sklearn.datasets as datasets
-from sklearn import metrics
 from sklearn.cluster import AgglomerativeClustering
-from sklearn.model_selection import train_test_split
-import numpy as np
+from sklearn.cluster import AffinityPropagation
+from sklearn import metrics
 
-np.random.seed(100)
-iris = datasets.load_iris()
-X_train, X_test, Y_train, Y_test = train_test_split(iris.data, 
+iris=sklearn.datasets.load_iris()
+x_train,x_test,y_train,y_test=train_test_split(iris.data, iris.target, stratify=iris.target, random_state=30)
 
+km_cls=KMeans(n_clusters=3)
+km_cls=km_cls.fit(x_train)
+print(metrics.homogeneity_score(km_cls.predict(x_test),y_test))
+
+age_cls=AgglomerativeClustering(n_clusters=3)
+agg_cls=age_cls.fit(x_train)
+print(metrics.homogeneity_score(agg_cls.fit_predict(x_test),y_test))
+
+af_cls=AffinityPropagation()
+af_cls=af_cls.fit(x_train)
+print(metrics.homogeneity_score(af_cls.predict(x_test),y_test))
