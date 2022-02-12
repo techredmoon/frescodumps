@@ -104,6 +104,30 @@ f_reg = RandomForestRegressor()
 
 
 
+#### Machine Learning Using Scikit-Learn | 5 | SVM
+#### TASK 1
+import sklearn.datasets as datasets
+from sklearn.model_selection import train_test_split
+import numpy as np
+
+np.random.seed(100)
+digits = datasets.load_digits()
+X_train, X_test, Y_train, Y_test = train_test_split(digits.data, digits.target,random_state=30)
+print(X_train.shape)
+print(X_test.shape)
+
+#### TASK 2
+import sklearn.datasets as datasets
+from sklearn.model_selection import train_test_split
+from sklearn.svm import SVC
+import numpy as np
+
+np.random.seed(100)
+digits = datasets.load_digits()
+X_train, X_test, Y_train, Y_test = train_test_split(digits.data, digits.target,random_state=30,stratify=digits.target)
+svm_clf = SVC()
+svm_clf = svm_clf.fit(X_train, Y_train)
+
 
 
 #### Machine Learning Using Scikit-Learn | 6 | Clustering
