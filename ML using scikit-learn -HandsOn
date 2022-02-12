@@ -24,7 +24,23 @@ print(knn_clf.score(X_train,y_train))
 print(knn_clf.score(X_test,y_test))
 
 k_range = range(3,10)
-
+-----------------------
+1. Preprocessing
+#Write your code here
+import sklearn.preprocessing as preprocessing
+import sklearn.datasets
+import numpy as np
+iris=sklearn.datasets. load_iris()
+iris_normal=preprocessing. Normalizer(norm="12").fit(iris.data)
+iris_normalized=iris_normal.transform(iris.data)
+print(iris_normalized.mean(axis=0))
+ohe=preprocessing. OneHotEncoder()
+iris_target_onehotrohe. fit_transform(iris.target.reshape(-1,1))
+print(iris_target_onehot.toarray ( ) [[0,50,100]])
+iris.data[:50, :]=np. nan
+imp=preprocessing. Imputer(missing_values='NaN', strategy='mean')
+iris_imputed=imp.fit_transform(iris.data)
+print(iris_imputed.mean(axis=0))
 
 # Machine Learning Using Scikit-Learn | 3 | Decision Trees ================================================================================
 
