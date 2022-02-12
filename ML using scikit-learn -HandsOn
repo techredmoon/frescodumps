@@ -75,3 +75,29 @@ for x in range(2, 6):
          maxdepth = x
          maxscore = score
 print(maxdepth)
+
+
+### Machine Learning Using Scikit-Learn | 4 | Ensemble Methods
+#### TASK 1
+import sklearn.datasets as datasets
+from sklearn.model_selection 
+import train_test_split
+import numpy as np
+np.random.seed(100)
+boston = datasets.load_boston()
+X_train, X_test, Y_train, Y_test = train_test_split(boston.data, boston.target,random_state=30)
+print(X_train.shape)
+print(X_test.shape)
+
+### TASK 2
+import sklearn.datasets as datasets
+from sklearn.model_selection 
+import train_test_split
+from sklearn.ensemble import RandomForestRegressor
+import numpy as np
+np.random.seed(100)
+boston = datasets.load_boston()
+X_train, X_test, Y_train, Y_test = train_test_split(boston.data, boston.target,random_state=30)
+print(X_train.shape)
+print(X_test.shape)r
+f_reg = RandomForestRegressor()
